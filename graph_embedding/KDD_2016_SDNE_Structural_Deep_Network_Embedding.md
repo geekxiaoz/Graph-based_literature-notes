@@ -33,7 +33,7 @@ As the method of abstract shows.
 1. The *second-order* proximity refers to how similar the neighborhood structure of a pair of vertexes is. It is an unsupervised model which is composed of two parts, i.e. the encoder and decoder. **The encoder** ==consists of multiple non-linear functions that map the input data to representation space.== **The decoder** ==also consists of multiple non-linear function mapping the representations in representation space to reconstruction space.== Then given the input $\mathbf{x}_{i}$, the hidden representations for each layer are shown as follows: 
 
    $$
-   \mathbf{y}_{i}^{(1)}=\sigma \left(W^{(1)} \mathbf{x}_{i}+\mathbf{b}^{(1)}\right)
+   \mathbf{y}_{i}^{(1)}=\sigma(W^{(1)}\mathbf{x}_{i}+\mathbf{b}^{(1)})
    $$
 
    $$\mathbf{y}_{i}^{(k)}=\sigma \left(W^{(k)}\mathbf{y}_{i}^{k-1}+\mathbf{b}^{(j)}\right), k=2,\ldots,K$$         (1)
