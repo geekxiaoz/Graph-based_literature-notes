@@ -18,7 +18,7 @@
 ### Definition
 
 1. *first-order-proximity*. For any pair of vertexes, if $s_{i,j}$>0, there exists positive first-order proximity between $v_{i}$ and $v_{j}$ .
-2. *second-order-proximity*. Describes the proximity of the pair's neighborhood structure. Let $\mathcal{N}_u=\left \{s_{u,1}, \ldots, s_{u,|V|}\right\}$ denote the *first-order-proximity* between $v_{u}$ and other vertexes. Then, *second-order-proximity* is determined by the similarity of $\mathcal{N}_{u}$ and $\mathcal{N}_{v}$. ==Intuitively, the *second-order proximity* assumes that if two vertexes share many common neighbors, they tend to be similar.== 
+2. *second-order-proximity*. Describes the proximity of the pair's neighborhood structure. Let $\mathcal{N}_u=\left \{s_{u,1}, \ldots, s_{u,|V|}\right\}$ denote the *first-order-proximity* between $v_{u}$ and other vertexes. Then, *second-order-proximity* is determined by the similarity of $N_{u}$ and $\mathcal{N}_{v}$. ==Intuitively, the *second-order proximity* assumes that if two vertexes share many common neighbors, they tend to be similar.== 
 
 ### The Model
 
