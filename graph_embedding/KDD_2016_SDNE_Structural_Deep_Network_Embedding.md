@@ -18,7 +18,7 @@
 ### Definition
 
 1. *first-order-proximity*. For any pair of vertexes, if $s_{i,j}$>0, there exists positive first-order proximity between $v_{i}$ and $v_{j}$ .
-2. *second-order-proximity*. Describes the proximity of the pair's neighborhood structure. Let $\mathcal{N}_u=\left \{s_{u,1}, \ldots, s_{u,|V|}\right\}$ denote the *first-order-proximity* between $v_{u}$ and other vertexes. Then, *second-order-proximity* is determined by the similarity of $N_{u}$ and $\mathcal{N}_{v}$. ==Intuitively, the *second-order proximity* assumes that if two vertexes share many common neighbors, they tend to be similar.== 
+2. *second-order-proximity*. Describes the proximity of the pair's neighborhood structure. Let $\mathcal{N}_u=\left \{s_{u,1}, \ldots, s_{u,|V|}\right\}$ denote the *first-order-proximity* between $v_{u}$ and other vertexes. Then, *second-order-proximity* is determined by the similarity of $mathcal{N}_{u}$ and $\mathcal{N}_{v}$. ==Intuitively, the *second-order proximity* assumes that if two vertexes share many common neighbors, they tend to be similar.== 
 
 ### The Model
 
@@ -32,9 +32,7 @@ As the method of abstract shows.
 
 1. The *second-order* proximity refers to how similar the neighborhood structure of a pair of vertexes is. It is an unsupervised model which is composed of two parts, i.e. the encoder and decoder. **The encoder** ==consists of multiple non-linear functions that map the input data to representation space.== **The decoder** ==also consists of multiple non-linear function mapping the representations in representation space to reconstruction space.== Then given the input $\mathbf{x}_{i}$, the hidden representations for each layer are shown as follows: 
 
-   $$
-   \mathbf{y}_{i}^{(1)}=\sigma(W^{(1)}\mathbf{x}_{i}+\mathbf{b}^{(1)})
-   $$
+   $\mathbf{y}_{i}^{(1)}=\sigma(W^{(1)}\mathbf{x}_{i}+\mathbf{b}^{(1)})$
 
    $$\mathbf{y}_{i}^{(k)}=\sigma \left(W^{(k)}\mathbf{y}_{i}^{k-1}+\mathbf{b}^{(j)}\right), k=2,\ldots,K$$         (1)
 
